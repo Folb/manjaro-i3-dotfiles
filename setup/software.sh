@@ -7,6 +7,9 @@ echo "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 echo "fish"
 sudo pacman -S --noconfirm fish
 
+echo "terminator"
+sudo pacman -S --noconfirm terminator
+
 echo "pacaur"
 sudo pacman -S --noconfirm pacuaur
 
@@ -40,6 +43,12 @@ sudo pacman -S --noconfirm unzip
 
 echo "f.lux"
 yaourt -S --noconfirm xflux
+
+echo "tex-live"
+pacaur -S --noconfirm texlive-most
+
+echo "evince"
+sudo pacman -S --noconfirm evince
 
 echo "removing palemoon"
 sudo pacman -Rs --noconfirm palemoon-bin
