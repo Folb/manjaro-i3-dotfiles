@@ -53,7 +53,7 @@ if [ ! -d ~/.config/fish ]; then
     mkdir ~/.config/fish
 fi
 if [ -f ~/.config/fish/fish_variables ]; then
-    mv ~/.config/fish/fish_variables ~/.config/fish/pre.fish_variables.bak
+    mv ~/.config/fish/fish_variables ~/.config/fish/pre-fish_variables.bak
 fi
 cp -r ~/manjaro-i3-dotfiles/.config/fish/* ~/.config/fish
 
@@ -67,7 +67,7 @@ echo "compton"
 if [ -f ~/.config/compton.conf ]; then 
     mv ~/.config/compton.conf ~/.config/pre-compton.conf.bak
 fi
-cp ~/manjaro-i3-dotfiles/.config/comton.conf ~/.config/
+cp ~/manjaro-i3-dotfiles/.config/compton.conf ~/.config/
 
 echo "changing default shell to fish"
 sudo chsh -s /etc/fish/
