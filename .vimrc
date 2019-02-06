@@ -18,7 +18,7 @@ set shiftwidth=4
 set expandtab
 
 " NerdTree toggle
-map <silent> <C-n> :NERDTreeFocus<CR>
+map <silent> <C-n> :NERDTreeToggle<CR>
 
 " Latex Live Preview
 let g:livepreview_previewer = 'evince'
