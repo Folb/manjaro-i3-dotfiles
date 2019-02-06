@@ -9,7 +9,7 @@ function fish_prompt --description 'Write out the prompt'
     end
 
     if not set -q __fish_git_prompt_color_branch
-        set -g __fish_git_prompt_color_branch magenta --bold
+        set -g __fish_git_prompt_color_branch yellow --bold
     end
     if not set -q __fish_git_prompt_showupstream
         set -g __fish_git_prompt_showupstream "informative"
@@ -25,23 +25,23 @@ function fish_prompt --description 'Write out the prompt'
     end
 
     if not set -q __fish_git_prompt_char_stagedstate
-        set -g __fish_git_prompt_char_stagedstate "●"
+        set -g __fish_git_prompt_char_stagedstate " ●"
     end
     if not set -q __fish_git_prompt_char_dirtystate
-        set -g __fish_git_prompt_char_dirtystate "✚"
+        set -g __fish_git_prompt_char_dirtystate " ✚"
     end
     if not set -q __fish_git_prompt_char_untrackedfiles
-        set -g __fish_git_prompt_char_untrackedfiles "…"
+        set -g __fish_git_prompt_char_untrackedfiles " …"
     end
     if not set -q __fish_git_prompt_char_invalidstate
-        set -g __fish_git_prompt_char_invalidstate "✖"
+        set -g __fish_git_prompt_char_invalidstate " ✖"
     end
     if not set -q __fish_git_prompt_char_cleanstate
-        set -g __fish_git_prompt_char_cleanstate "✔"
+        set -g __fish_git_prompt_char_cleanstate " ✔"
     end
 
     if not set -q __fish_git_prompt_color_dirtystate
-        set -g __fish_git_prompt_color_dirtystate blue
+        set -g __fish_git_prompt_color_dirtystate cyan
     end
     if not set -q __fish_git_prompt_color_stagedstate
         set -g __fish_git_prompt_color_stagedstate yellow
@@ -50,7 +50,7 @@ function fish_prompt --description 'Write out the prompt'
         set -g __fish_git_prompt_color_invalidstate red
     end
     if not set -q __fish_git_prompt_color_untrackedfiles
-        set -g __fish_git_prompt_color_untrackedfiles $fish_color_normal
+        set -g __fish_git_prompt_color_untrackedfiles red
     end
     if not set -q __fish_git_prompt_color_cleanstate
         set -g __fish_git_prompt_color_cleanstate green --bold
