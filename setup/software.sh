@@ -27,6 +27,9 @@ sudo pacman -S --noconfirm python-pip
 echo "Spotify"
 yaourt -S --noconfirm spotify
 
+echo "Steam"
+sudo pacman -S --noconfirm steam-manjaro
+
 echo "Gnome calculator"
 yaourt -S --noconfirm gnome-calculator
 

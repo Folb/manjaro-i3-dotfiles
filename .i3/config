@@ -58,6 +58,7 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec chromium
+bindsym $mod+F7 exec steam
 bindsym $mod+F8 exec spotify
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
@@ -129,9 +130,9 @@ set $ws1 "1:  "
 set $ws2 "2:  "
 set $ws3 "3:  "
 set $ws4 "4:  "
-set $ws5 5
-set $ws6 6
-set $ws7 7
+set $ws5 "5:  "
+set $ws6 "6:  "
+set $ws7 "7:  "
 set $ws8 "8:  "
 
 # switch to workspace
@@ -211,6 +212,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # Default workspaces
 assign [class="Chromium"] $ws2
 assign [class="Spotify"] $ws8
+assign [class="Steam"] $ws7
 for_window [class="Spotify"] move to workspace $ws8
 # Set shut down, restart and locking features
 bindsym $mod+0 mode "$mode_system"
@@ -310,7 +312,7 @@ bar {
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
     tray_output none
-#   tray_output primary
+#    tray_output primary
 #	tray_output eDP1
 
 	bindsym button4 nop
