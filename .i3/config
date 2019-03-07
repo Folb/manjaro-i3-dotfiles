@@ -213,7 +213,6 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # Default workspaces
 assign [class="Chromium"] $ws2
 assign [class="Evience"] $ws4
-assign [class="Signal"] $ws6
 assign [class="Spotify"] $ws8
 assign [class="Steam"] $ws7
 for_window [class="Spotify"] move to workspace $ws8
