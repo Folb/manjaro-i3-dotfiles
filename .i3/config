@@ -58,6 +58,7 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec chromium
+bindsym $mod+F6 exec signal-desktop
 bindsym $mod+F7 exec steam
 bindsym $mod+F8 exec spotify
 bindsym $mod+t exec --no-startup-id pkill compton
@@ -211,6 +212,8 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # Default workspaces
 assign [class="Chromium"] $ws2
+assign [class="Evience"] $ws4
+assign [class="Signal"] $ws6
 assign [class="Spotify"] $ws8
 assign [class="Steam"] $ws7
 for_window [class="Spotify"] move to workspace $ws8
