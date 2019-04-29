@@ -5,6 +5,7 @@ Plug 'morhetz/gruvbox'
 Plug 'raimondi/delimitmate'
 Plug 'ryanoasis/vim-devicons'
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+Plug 'valloric/youcompleteme'
 
 call plug#end()
 " Run :PlugInstall after saving 
