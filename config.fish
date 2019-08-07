@@ -29,8 +29,9 @@ abbr gs 'git status'
 abbr gst 'git stash'
 
 #------ Scripts ------
-abbr headset 'bash -c ~/scripts/connectQC35.sh'
+#abbr headset 'bash -c ~/scripts/connectQC35.sh'
 
 #------ Other ------
 abbr p3 'python3'
-abbr ideas 'vim ~/Docs/ideas/'
+abbr newidea 'vim ~/Docs/ideas/newideas'
+abbr update 'sudo pacman -Syu && pacaur -Syu'
